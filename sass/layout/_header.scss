@@ -1,0 +1,37 @@
+.header {
+    color: $white;
+    background-image: linear-gradient( rgba($very-light-red, .9),rgba($slightly-light-red, .9)), url('../images/bg-pattern-intro-mobile.svg');
+    border-bottom-left-radius: 10rem;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 5rem 2rem 10rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Overpass, 'Open sans', 'Gill Sans';
+
+    &__title {
+        text-align: left;
+    }
+
+    &__main {
+        text-align: center;
+        align-self: center;
+        margin: 4rem 2rem;
+        animation: moveInBottom 2s;
+
+        &--title {
+            font-size: 8rem;
+            font-weight: 700;
+        }
+
+        &--paragraph {
+            font-size: 4rem;
+            color: rgba($white, .8);
+            font-weight: 400;
+            margin: 2rem 0;
+        }
+
+    }
+}

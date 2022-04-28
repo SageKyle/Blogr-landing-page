@@ -1,0 +1,18 @@
+.features {
+    margin: 2rem auto;
+    
+    &__img {
+        height: 40vh;
+        width: 100%;
+        background-image: url('../images/illustration-laptop-mobile.svg');
+        background-size: contain;
+        position: relative;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin-bottom: -2.5rem;
+    }
+    
+    &__container {
+        margin: 1rem auto;
+    }
+}

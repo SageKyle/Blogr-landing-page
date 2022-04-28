@@ -1,0 +1,190 @@
+
+@media (min-width: 720px) {
+
+    html {font-size: 60%;}
+
+    .primary-heading {font-size: 4rem;}
+
+    .header {
+        padding: 6rem;
+        background-position: 5rem;
+        position: relative;
+
+        &__title {display: inline;}
+
+        .line-break {display: none;}
+
+        &__main {
+            margin-top: 25rem;
+
+            &--links {margin-top: 6rem;}
+        }
+    }
+
+    .nav-icon {display: none;}
+
+    .btn:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 .5rem .5rem rgba($very-dark-black-blue, .4);
+        backface-visibility: hidden;
+    }
+    .btn:active {transform: translateY(1rem);}
+
+    .navigation {
+        display: block;
+        background-color: transparent;
+        position: absolute;
+        top: 2rem;
+        margin-left: 4rem;
+        z-index: 2;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            color: $white;
+            margin: 2rem;
+            padding: 2rem;
+        }
+
+        &__services {
+            display: flex;
+
+            &--underline {display: none;}
+
+            &--items {background-color: $white;}
+
+            &--link {
+                border-bottom: 1px solid rgba($grayish-blue, .4);
+
+                &:hover,
+                a:link:hover {font-weight: bolder;}
+            }
+
+            &--header {
+                position: relative;
+                padding: 2rem;
+
+                &::after {
+                    content: url('../images/icon-arrow-light.svg');
+                    width: auto;
+                    height: 2rem;
+                    padding: 0 1rem;
+                    display: inline-block;
+                }
+            }
+
+            &--items{
+                color: $very-dark-black-blue;
+                background-color: $white;
+                border-radius: 2rem 2rem 2rem 0;
+                position: absolute;
+                top: 10rem;
+                padding: 0 2rem;
+
+            }
+            
+            .item2 {left: 25rem;}
+            .item3 {left: 40rem;}
+
+            &--header:hover + &--items,
+            &--items:hover{
+                display: block;
+                z-index: 90;
+            }
+
+        }
+
+        &__user {
+            margin-top: -2rem;
+            padding-top: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+    
+            &--link {
+                border-radius: 4rem;
+                color: $very-dark-black-blue;
+                
+                &:hover {background-color: $white;}
+            }
+        }
+    }
+
+    .design {
+        background-image: url('../images/illustration-editor-desktop.svg');
+        background-position-x: 150%;
+        background-position-y: 30%;
+        background-size: 60%;
+        margin: 5rem 0;
+
+        &__container {
+            width: 50%;
+            margin: 6rem;
+        }
+        
+        &__paragraph {text-align: left;}
+    }
+
+    .infrastructure {
+        background-position: -50% -50%;
+        background-repeat: repeat;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2rem 0;
+
+        &__img {
+            width: 50%;
+            margin-top: 5rem;
+        }
+
+        &__text {
+            width: 40%;
+
+            &--paragraph {text-align: left;}
+        }
+    }
+
+    .features {
+        margin: 2rem auto;
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        
+        &__img {
+            height: auto;
+            width: 50%;
+            background-image: url('../images/illustration-laptop-desktop.svg');
+            background-size: 90%;
+            background-position: -100% 50%;
+            background-repeat: no-repeat;
+        }
+        
+        &__container {
+            width: 50%;
+            margin: 1rem auto;
+        }
+    }
+
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: initial;
+
+        &__container {
+            margin-top: 0;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__heading {padding-bottom: 1.5rem;}
+        &__link {
+            padding: 1rem;
+
+            &:hover{
+                color: $very-dark-grayish-blue;
+            }
+        }
+    }
+}

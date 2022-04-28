@@ -1,0 +1,22 @@
+
+.btn {
+    border: 2px solid $white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 3rem;
+    width: fit-content;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    color: $white;
+    background-color: inherit;
+    margin: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:first-child {
+        background-color: $white;
+        color: $light-red;
+    }
+}
+
+.color-white {color: $white;}

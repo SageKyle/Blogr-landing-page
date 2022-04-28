@@ -1,0 +1,21 @@
+{
+  "name": "blogr",
+  "version": "1.0.0",
+  "description": "blogr complete landing page with HTML, CSS and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "HTML",
+    "CSS",
+    "JAvascript"
+  ],
+  "author": "Paul Ominyi",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

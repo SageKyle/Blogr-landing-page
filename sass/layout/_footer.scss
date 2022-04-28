@@ -1,0 +1,31 @@
+.footer {
+    background-color: $very-dark-black-blue;
+    color: $white;
+    text-transform: capitalize;
+    border-top-right-radius: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+
+    &__container {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    &__heading {
+        font-size: 3.2rem;
+        margin: 2rem 0;
+    }
+
+    &__items {
+        margin-bottom: 5rem;
+    }
+
+    &__link {
+        padding: .5rem;
+        display: block;
+    }
+}

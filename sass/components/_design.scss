@@ -1,0 +1,25 @@
+.design {
+    padding: 5rem 2rem;
+    margin-bottom: 4rem;
+    background-image: url('../images/illustration-editor-mobile.svg');
+    background-position-y: 15%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    &__container {
+        margin-top: 65rem;
+    }
+
+    &__item {
+        padding: 4rem;
+    }
+
+    &__paragraph {
+        font-size: 3rem;
+        text-align: center;
+    }
+}

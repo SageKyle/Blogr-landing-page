@@ -1,0 +1,37 @@
+.infrastructure {
+    background-image: linear-gradient(rgba($very-dark-blue, .9), rgba($very-dark-blue, .9)), url('../images/bg-pattern-circles.svg');
+    background-size: contain;
+    background-position-y: 0%;
+    background-position-x: -150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35rem;
+    position: relative;
+    padding: 5rem 2rem;
+    border-bottom-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+
+    &__img {
+        width: 90%;
+        margin-top: -37rem;
+    }
+
+    &__text {
+        margin-bottom: 5rem;  
+    animation-name: moveInLeft;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    overflow-x: hidden;
+
+        &--paragraph {
+            color: $white;
+            font-size: 3.2rem;
+            text-align: center;
+            margin: 4rem;
+        }
+    }
+}
